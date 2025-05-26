@@ -99,24 +99,16 @@ class HeaderMenu extends HTMLElement {
             </div>
         </div>
         `;
+
+        // Initialize time display
         this.updateTime();
         setInterval(() => this.updateTime(), 1000);
     }
 
     updateTime() {
         const timeDisplay = this.querySelector('#current-time');
-        
-        fetch(`${utility}returnTime.php`)
-            .then(response => response.json())
-            .then(data => {
-                timeDisplay.textContent = data.time;
-            })
-            .catch(error => {
-                console.error('Error fetching time:', error);
-                // Fallback to browser time if API fails
-                const now = new Date();
-                timeDisplay.textContent = now.toLocaleTimeString();
-            });
+        const now = new Date();
+        timeDisplay.textContent = now.toLocaleTimeString();
     }
 }
 customElements.define('header-menu', HeaderMenu);

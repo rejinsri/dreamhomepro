@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villa - Property Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/frontend/assets/css/component.css" rel="stylesheet">
+    <link href="/frontend/assets/css/property-detail.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header-menu></header-menu>
+
+    <!-- Property Hero Section -->
+    <section class="property-hero">
+        <div id="property-particles"></div>
+        <div class="container property-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="property-gallery">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&q=80" alt="Luxury Villa">
+                            <div class="offer-badge">15% OFF</div>
+                        </div>
+                        <div class="thumbnail-gallery">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&q=80" alt="Living Room">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&q=80" alt="Kitchen">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&q=80" alt="Bedroom">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&q=80" alt="Bedroom">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="property-summary">
+                        <div class="price-tag">₹850,000</div>
+                        <h1>Luxury Villa</h1>
+                        <div class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</div>
+                        <div class="key-features">
+                            <div class="feature"><i class="fas fa-bed"></i> 4 Beds</div>
+                            <div class="feature"><i class="fas fa-bath"></i> 3 Baths</div>
+                            <div class="feature"><i class="fas fa-ruler-combined"></i> 2500 sq.ft</div>
+                            <div class="feature"><i class="fas fa-car"></i> 2 Parking</div>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&q=80" alt="Agent" class="agent-image">
+                            <div class="agent-info">
+                                <h4>John Smith</h4>
+                                <p>Senior Property Consultant</p>
+                                <div class="agent-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5/5)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-contact">
+                            <a href="tel:+1234567890" class="contact-btn"><i class="fas fa-phone"></i> Call Agent</a>
+                            <a href="mailto:john@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Details Section -->
+    <section class="property-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="details-card">
+                        <h2>Property Description</h2>
+                        <p>Luxurious villa featuring modern architecture and premium amenities. Perfect for families looking for comfort and elegance.</p>
+                        
+                        <h3>Features & Amenities</h3>
+                        <div class="amenities-grid">
+                            <div class="amenity"><i class="fas fa-wifi"></i> High-speed Internet</div>
+                            <div class="amenity"><i class="fas fa-swimming-pool"></i> Swimming Pool</div>
+                            <div class="amenity"><i class="fas fa-dumbbell"></i> Fitness Center</div>
+                            <div class="amenity"><i class="fas fa-shield-alt"></i> 24/7 Security</div>
+                            <div class="amenity"><i class="fas fa-tree"></i> Garden</div>
+                            <div class="amenity"><i class="fas fa-video"></i> CCTV</div>
+                        </div>
+
+                        <h3>Property Advantages</h3>
+                        <ul class="advantages-list">
+                            <li><i class="fas fa-check-circle"></i> Prime Location</li>
+                            <li><i class="fas fa-check-circle"></i> Modern Architecture</li>
+                            <li><i class="fas fa-check-circle"></i> Spacious Rooms</li>
+                            <li><i class="fas fa-check-circle"></i> Premium Fixtures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Agent Profile -->
+                    
+
+                    <!-- Enquiry Form -->
+                    <div class="enquiry-card">
+                        <h3>Enquire About This Property</h3>
+                        <form class="enquiry-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Enquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- After Property Details Section and before footer -->
+    <section class="map-section py-5">
+        <div class="container">
+            <div class="card-standard">
+                <h3>Location</h3>
+                <div id="property-map" class="property-map"></div>
+            </div>
+        </div>
+    </section>
+
+    <foot-bar></foot-bar>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="/frontend/assets/js/nav.js"></script>
+    <script src="/frontend/assets/js/foot.js"></script>
+    <script src="/frontend/assets/js/property-detail.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const map = L.map('property-map').setView([19.0760, 72.8777], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add marker for property location
+    L.marker([19.0760, 72.8777])
+        .addTo(map)
+        .bindPopup('Luxury Villa')
+        .openPopup();
+});
+
+// Animate features on scroll
+const features = document.querySelectorAll('.feature-item');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animation = 'fadeInUp 0.5s forwards';
+        }
+    });
+}, { threshold: 0.1 });
+
+features.forEach(feature => observer.observe(feature));
+    </script>
+</body>
+</html>

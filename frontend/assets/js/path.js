@@ -1,0 +1,1 @@
+const utility = "http://localhost/real_estate/backend/api/utility/";
